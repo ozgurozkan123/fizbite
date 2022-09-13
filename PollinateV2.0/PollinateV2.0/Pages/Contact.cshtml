@@ -1,0 +1,32 @@
+﻿@page
+@model PollinateV2._0.Pages.ContactModel
+@{
+}
+<h3>Contact</h3>
+
+@if(Model.hasData)
+ {
+    <p>Hello @Model.firstName @Model.lastName</p>
+    <p>We received message:</p>
+    <p>@Model.message</p>
+            }
+
+<div class="container"
+    <from method="POST">
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="firstname" /> <br />
+
+
+
+        <label for="lname">Last Name</label><br />
+        <input type="text" id="lname" name="lastname" /> <br />
+
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" style="height:200px"></textarea><br />
+
+
+        <input type="submit" value="Submit"
+
+    </from>
+</div>
